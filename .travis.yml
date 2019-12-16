@@ -4,6 +4,7 @@ services:
     - docker
     
 before_install:
-    - docker build -t nonameforpirate2/docker-react -f Dockerfile.dev . 
+    - docker build -t nonameforpirate2/docker-react2 -f Dockerfile.dev . 
     
-test3
+script:
+    - docker run nonameforpirate2/docker-react2 npm run test -- --coverage
