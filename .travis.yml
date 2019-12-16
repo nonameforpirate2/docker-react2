@@ -6,4 +6,4 @@ services:
 before_install:
     - docker build -t nonameforpirate2/docker-react -f Dockerfile.dev . 
     
-test
+test3
